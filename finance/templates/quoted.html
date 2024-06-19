@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+<h2>Stock Information</h2>
+
+<body>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Stock</th>
+            <th scope="col">Price</th>
+            <th scope="col">Symbol</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{ symbolInfo["name"] }}
+                </td>
+                <td>
+                    {{ symbolInfo["price"] | usd }}
+                </td>
+                <td>
+                    {{ symbolInfo["symbol"] }}
+                </td>
+
+            </tbody>
+      </table>
+
+</body>
+
+{% endblock %}

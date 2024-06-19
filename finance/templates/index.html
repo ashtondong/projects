@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Portfolio
+{% endblock %}
+
+{% block main %}
+<body>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Stock</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Current Price</th>
+            <th scope="col">Holding Total</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for item in dictInfo %}
+            <tr>
+                <td>
+                    {{ item["stocks"] }}
+                </td>
+                <td>
+                    {{ item["shares"] }}
+                </td>
+                <td>
+                    {{ item["price"] | usd }}
+                </td>
+                <td>
+                    {{ item["total"] | usd }}
+                </td>
+            </tr>
+            {% endfor %}
+            <thead>
+                <th>Total Cash Remaining</th>
+                <td>{{ cash | usd }}</td>
+            </thead>
+            <thead>
+                <th>Total Value</th>
+                <td>{{ grandTotal | usd }}</td>
+            </thead>
+            </tbody>
+        </tbody>
+      </table>
+
+</body>
+
+<form action="/" method="post">
+    <input name="cash" type="number" placeholder="Add Cash">
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

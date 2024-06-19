@@ -1,0 +1,22 @@
+sort1 uses: bubble sort
+
+How do you know?:
+Sort1 and Sort2 were similar in run time in the reversed and random lists, however, we know that bubble sort has a best case scenario of O(n) in the isntances when the lists are already sorted so the comparison was really apparent in that list. We knew sort2 was merge sort
+because it consistently performed faster in all types of lists but sort1 was faster in the sorted list which was a giveaway as selection sort(sort3) still needs to run through the whole list regardless of order making sort1 significantly faster, therefore, it being bubble sort.
+It also has a significantly slower run time when the list is in reversed because it has to make a lot more swaps.
+Determining list was the reversed list.
+
+sort2 uses: merge sort
+
+
+How do you know?:
+When comparing run times of Sort2 to the rest of the algorithms, Sort2 consistently had the fastest run time. Knowing merge sort has a run time of O(nlogn), we know this algorithm will be consistently faster than all others.
+
+
+sort3 uses: selection sort
+
+
+How do you know?:
+Sort3 is consistently the slowest in the sorted list, which is a giveaway because regardless of the order of numbers, selection sort has to run its algorithm which takes O(n^2) time. Although bubble sort and seleciton sort appeared
+similar in the reversed and random lists, the sorted list was the identifier as the other two algorithms had significantly faster run times.
+Determining list was the sorted list. 

@@ -1,0 +1,65 @@
+/* across all pages */
+.center{
+    text-align: center
+}
+
+form{
+    border: 2px solid #004D9F;
+    border-radius: 8px;
+
+}
+
+/* main page */
+.text-style{
+    font-family: Inter SemiBold,sans-serif;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+
+/* UCSB */
+.activities{
+    background-color:#004D9F;
+    color:white;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 50px;
+}
+.oncampus{
+    border:2px solid;
+    border-color:#FFB814;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 150px;
+}
+.offcampus{
+    border:2px solid;
+    border-color:#FFB814;
+    margin-top: 25px;
+    height: 150px;
+
+}
+#storkesunrise{
+    width: 100%;
+    length: 100%;
+}
+
+/* wego */
+.carousel-inner{
+    height:640x;
+    width: 640px;
+    margin:auto;
+    border: 2px solid;
+    border-color: black;
+}
+
+/* frisbee */
+.header-branding-logo{
+    max-width: 318px;
+    width: 100%
+}
+.main-header{
+    color:#0bb4d5;
+}

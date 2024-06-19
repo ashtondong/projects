@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+    <!--This controls the navigation bar-->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:8080/index.html#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8080/ucsb.html">School</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8080/frisbee.html">Frisbee</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pet Friends
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://127.0.0.1:8080/wego.html">Wego</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:8080/zora.html">Zora</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:8080/thegirls.html">The Girls</a></li>
+                </ul>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Google Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--This is the header of the webpage-->
+      <div class="center">
+        <h2 style="margin-top:50px">Welcome to UCSB</h2>
+        <p>Located right on the oceanfront, UCSB is not only home to world-class professors, but also embodies a "work hard, play hard" attitude.</p>
+        <div class="container">
+            <img src="storke-sunrise-02.jpg" alt="ucsb" id="storkesunrise">
+        </div>
+        </div>
+          <!--This is the activities portion-->
+          <div class="activities">
+              <p class="center" style="font-size:30px">Activities</p>
+          </div>
+          <div class="oncampus">
+              <p style="margin:10px">On Campus</p>
+              <ul>
+                  <li>Recreational Sports</li>
+                  <li>Clubs</li>
+                  <li>Mental Health Services</li>
+                  <li>Classes</li>
+              </ul>
+          </div>
+          <div class="offcampus">
+            <p style="margin:10px">Off Campus</p>
+            <ul>
+                <li>Hendry's Beach</li>
+                <li>Wild Cat</li>
+                <li>Funk Zone</li>
+                <li>State Street</li>
+            </ul>
+        </div>
+    </body>
+</html>

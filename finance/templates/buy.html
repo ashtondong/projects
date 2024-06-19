@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+<h2>Buy</h2>
+
+<h3>User Information</h3>
+
+<h4>You are logged in as {{ user }}</h4>
+You have {{ cash | usd }}
+
+
+<form action="/buy" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Enter Symbol" type="text">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Enter Shares" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+{% endblock %}
